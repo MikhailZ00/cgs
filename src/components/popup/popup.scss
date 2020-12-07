@@ -1,0 +1,450 @@
+.popup-box {
+    background: #FFFFFF;
+    width: 801px;
+    height: 740px;
+    box-sizing: border-box;
+    z-index: 1000;
+    position: relative;
+    padding-top: 49px;
+    font-style: normal;
+    color: #2F2F2F;
+    .exit-logo {
+        position: absolute;
+        top: 28px;
+        right: 28px;
+        cursor: pointer;
+    }
+    .popup-title {
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 150%;
+        margin-left: 60px;
+        margin-bottom: 31px;
+    }
+    .two-blocks-of-elements {
+        display: flex;
+        position: relative;
+        background-color: #FFFFFF;
+        .block-of-left-elements {
+            padding: 0px 35px 40px 60px;
+            width: 400px;
+            box-sizing: border-box;
+            height: 500px;
+            overflow-y: auto;
+            .popup-prices-blok {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 29px;
+                align-items: baseline;
+                .price-title {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    width: 100%;
+                    .price {
+                        line-height: 150%;
+                    }
+                    .price-title-text {
+                        line-height: 117%;
+                    }
+                }
+                .prices-block-content {
+                    width: 100%;
+                    .prices-wrap {
+                        width: 100%;
+                        .prices {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 150%;
+                            width: 100%;
+                            margin-top: 6px;
+                            .price-railways {
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 117%;
+                                display: flex;
+                                margin-bottom: 8px;
+                                justify-content: space-between;
+                                width: 100%;
+                                .price {
+                                    line-height: 150%;
+                                }
+                            }
+                            .additional-prices {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-bottom: 6px;
+                                .price {
+                                    font-size: 16px;
+                                }
+                            }
+                            .price-sum {
+                                font-weight: bold;
+                                line-height: 137%;
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: 3px;
+                                .price {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .transportation-via-text {
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 115%;
+                    color: #B1B1B1;
+                    margin-bottom: 9px;
+                }
+            }
+            .popup-prices-blok:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .block-of-right-elements {
+            width: 400px;
+            padding-left: 40px;
+            box-sizing: border-box;
+            .description-price {
+                width: 277px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 150%;
+            }
+            .popup-description {
+                height: 37px;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                cursor: default;
+                margin-bottom: 20px;
+                margin-top: 32px;
+            }
+            .box-of-buttons {
+                display: flex;
+                margin-bottom: 24px;
+                .box-of-buttons-column {
+                    display: flex;
+                    flex-direction: column;
+                    .button-not-selected {
+                        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                        width: 165px;
+                        height: 53px;
+                        background: #FFFFFF;
+                        border: 1px solid #E7E7E7;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                    }
+                    .button-selected {
+                        width: 165px;
+                        height: 53px;
+                        background: #FFAB09;
+                        border: 1px solid #E7E7E7;
+                        box-sizing: border-box;
+                        cursor: default;
+                    }
+                    .button-not-selected:hover {
+                        background-color: #FFE2AB;
+                    }
+                }
+            }
+            .input-button {
+                .input-margin {
+                    margin-right: 40px;
+                    margin-bottom: 32px;
+                    padding-left: 17px;
+                    width: 274px;
+                    height: 52px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #928c8c;
+                    background: #FFFFFF;
+                    box-shadow: inset 0px 0px 10px rgba(80, 80, 80, 0.25);
+                    border-radius: 5px;
+                    border: none;
+                    -moz-appearance: textfield;
+                    -webkit-appearance: none;
+                }
+                .input-margin::-webkit-inner-spin-button {
+                    display: none;
+                }
+                .input-margin::placeholder {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: rgba(30, 30, 30, 0.3);
+                }
+            }
+            .popup-under-input-title {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 150%;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.popup-box-mob {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100%;
+    margin-top: 15px;
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    color: #2F2F2F;
+    font-style: normal;
+    overflow: auto;
+    width: calc(100% - 30px);
+    .exit-logo {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+    .popup-title {
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 25px;
+    }
+    .block-of-left-elements {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        .popup-prices-blok {
+            margin-bottom: 19px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            .prices-block-content {
+                display: flex;
+                justify-content: space-between;
+                .prices-wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    .line-vertical {
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        margin-right: 15px;
+                        margin-left: 25px;
+                    }
+                    .prices {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        white-space: pre;
+                        width: 100%;
+                        margin-right: 10px;
+                        .price-railways {
+                            font-weight: bold;
+                            font-size: 13px;
+                            line-height: 117%;
+                            display: flex;
+                            margin-bottom: 7px;
+                            justify-content: space-between;
+                            width: 100%;
+                            .price {
+                                font-size: 15px;
+                                line-height: 150%;
+                            }
+                        }
+                        .additional-prices {
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 117%;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 14px;
+                            width: 100%;
+                            .price {
+                                font-size: 15px;
+                                line-height: 150%;
+                            }
+                        }
+                        .price-sum {
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 117%;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            .price {
+                                font-size: 15px;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+                }
+            }
+            .transportation-via-text {
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 115%;
+                color: #B1B1B1;
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .block-of-right-elements {
+        .popup-under-input-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 14px;
+        }
+        .popup-description {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .input-button {
+            display: grid;
+            margin-bottom: 27px;
+            .input-margin {
+                margin-bottom: 40px;
+                padding-left: 17px;
+                width: 100%;
+                height: 58px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 140%;
+                color: rgba(0, 0, 0, 0.5);
+                background: #FFFFFF;
+                box-shadow: inset 0px 0px 10px rgba(80, 80, 80, 0.25);
+                border-radius: 5px;
+                border: none;
+                -moz-appearance: textfield;
+                -webkit-appearance: none;
+            }
+            .input-margin::placeholder {
+                font-weight: 500;
+                font-size: 15px;
+                color: rgba(30, 30, 30, 0.3);
+            }
+            .input-margin::-webkit-inner-spin-button {
+                display: none;
+            }
+        }
+        .popup-description-content {
+            display: flex;
+            margin-bottom: 24px;
+            justify-content: center;
+            width: 100%;
+            .box-of-buttons-column {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                .button-not-selected {
+                    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                    width: 100%;
+                    height: 53px;
+                    background: #FFFFFF;
+                    border: 1px solid #E7E7E7;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                }
+                .button-selected {
+                    width: 100%;
+                    height: 53px;
+                    background: #FFAB09;
+                    border: 1px solid #E7E7E7;
+                    box-sizing: border-box;
+                    cursor: default;
+                }
+            }
+        }
+        .description-price {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 150%;
+        }
+    }
+}
+
+.icon-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+    .text-button {
+        margin-left: 8px;
+        height: 17px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #2F2F2F;
+        text-align: center;
+        margin-top: -1px;
+    }
+}
+
+.popup-style {
+    position: fixed;
+    z-index: 1000;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    box-shadow: 0px 0px 0px 2000px rgba(0, 0, 0, 0.5);
+}
+
+input,
+input:active,
+input:focus {
+    outline: none;
+}
+
+.popup-success-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.popup-success-box-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.popup-style-success {
+    position: fixed;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+}
+
+.popup-style-success-mob {
+    position: fixed;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 20%;
+    position: relative;
+    top: 52%;
+    transform: translate(-47%, -160%);
+}
+
+.button-send {
+    width: max-content;
+}

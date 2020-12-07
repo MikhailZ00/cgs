@@ -1,0 +1,42 @@
+.choose-city {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 225px;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-right: 21px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.choose-city-mob {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 100%;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.city-text-pos {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1E1E1E;
+    margin-left: 40px;
+}
+
+.choose-city-mob .city-text-pos {
+    margin-left: 32px;
+}
+
+.city-checked-icon-pos {
+    margin-right: 20px;
+}

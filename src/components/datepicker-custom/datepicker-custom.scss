@@ -1,0 +1,132 @@
+.datepicker-custom {
+    width: 312px;
+    height: 292px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: inherit;
+    .react-datepicker__month-container {
+        font-family: 'Montserrat', sans-serif;
+        width: 310px;
+        box-sizing: border-box;
+        .react-datepicker__header--custom {
+            background: #FFFFFF;
+            border-bottom: none;
+            padding-top: 0px;
+            position: inherit;
+            .datepicker-custom__header {
+                flex-direction: row;
+                display: flex;
+                justify-content: space-between;
+                padding: 37px 40px 22px 40px;
+                .datepicker-custom__header-arrow {
+                    cursor: pointer;
+                }
+                .datepicker-custom__header-text {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #1E1E1E;
+                }
+            }
+            .react-datepicker__day-names {
+                display: none;
+            }
+        }
+        .react-datepicker__month {
+            margin: 0px;
+            width: min-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 182px;
+            margin: auto;
+            .react-datepicker__week {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 232px;
+                .react-datepicker__day {
+                    margin: 0px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    height: 22px;
+                    width: 22px;
+                    border: solid 5px #FFFFFF;
+                    border-radius: 5px;
+                }
+                .react-datepicker__day:hover {
+                    border: none;
+                    background: #cceef3;
+                    border: solid 5px #cceef3;
+                }
+                .react-datepicker__day--highlighted-custom-15 {
+                    color: #FF0000;
+                }
+                .react-datepicker__day--selected {
+                    background: #00ACC1;
+                    color: #FFFFFF;
+                    border: solid 5px #00ACC1;
+                }
+                .react-datepicker__day--selected:hover {
+                    background: #00ACC1;
+                    border: solid 5px #00ACC1;
+                }
+                .react-datepicker__day--highlighted-custom-15 + .react-datepicker__day--selected {
+                    color: #FFFFFF;
+                }
+                .react-datepicker__day--keyboard-selected {
+                    color: black;
+                    background-color: white;
+                }
+                .react-datepicker__day--disabled,
+                .react-datepicker__day--disabled:hover {
+                    background: white;
+                    border: solid 5px white;
+                    color: #CCCCCC;
+                }
+                .react-datepicker__day--today {
+                    background: #EFEFEF;
+                    color: rgba(30, 30, 30, 0.5);
+                    border: solid 5px #EFEFEF;
+                }
+                .react-datepicker__day--today:hover {
+                    background: #EFEFEF;
+                    border: solid 5px #EFEFEF;
+                }
+            }
+        }
+    }
+}
+
+.react-datepicker-wrapper {
+    display: inherit;
+    .react-datepicker__input-container input {
+        height: 61px;
+        width: 100%;
+        background: #FFFFFF;
+        border-radius: 5px;
+        padding: 21px 0px 22px 32px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #1E1E1E;
+        outline: none;
+        box-sizing: border-box;
+        border: none;
+    }
+}
+
+.input__icon {
+    position: absolute;
+    right: 35px;
+    width: 28px;
+    height: 28px;
+    transform: translate(0px, -45px);
+    pointer-events: none;
+}

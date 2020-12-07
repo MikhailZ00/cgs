@@ -1,0 +1,25 @@
+.map-open {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    width: 406px;
+}
+
+.map-open-mobile {
+    width: calc(100vw - 30px);
+    display: flex;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.map-open-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+}

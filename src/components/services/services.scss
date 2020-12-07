@@ -1,0 +1,31 @@
+.services-comp {
+    display: flex;
+    min-width: 300px;
+    margin-bottom: 20px;    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.services-comp-mob{
+    width: max-content;    
+    flex-direction: row;
+    display: flex;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.services-text {
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 14px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 3px;
+}
+
+.services-checkbox {
+    cursor: pointer;
+}
+
+.services-text--pointer {
+    cursor: pointer;
+}

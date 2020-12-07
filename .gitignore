@@ -1,0 +1,7 @@
+node_modules/
+.idea/*
+out/*
+!out/index.html
+!out/images/*
+!out/images/
+.DS_Store

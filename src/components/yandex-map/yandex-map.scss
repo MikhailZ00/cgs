@@ -1,0 +1,113 @@
+.yandex-map {
+    button {
+        border: none;
+    }
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .yandex-map__map {
+        width: 100%;
+        height: 560px;
+        box-sizing: border-box;
+        position: relative;
+        .yandex-map__button {
+            width: 262px;
+            height: 56px;
+            top: 460px;
+            padding: 16px 0px;
+        }
+    }
+}
+
+.yandex-map-mobile {
+    margin-top: 10px;
+    .yandex-map__map {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        box-sizing: border-box;
+        .yandex-map__button {
+            top: 250px;
+            width: 240px;
+            padding: 8px 0px;
+            height: 40px;
+        }
+    }
+}
+
+.yandex-map--hidden {
+    display: none;
+}
+
+.yandex-map__button-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: center;
+    margin: auto 0px;
+}
+
+.yandex-map__button {
+    transform: translateX(-50%);
+    background: #00ACC1;
+    box-shadow: 0px 7px 33px rgba(0, 172, 193, 0.7);
+    cursor: pointer;
+    position: absolute;
+    z-index: 10000;
+    box-sizing: border-box;
+    left: 50%;
+    border-radius: 5px;
+}
+
+.yandex-map__button-close {
+    width: 43px;
+    height: 42px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10000;
+    right: 40px;
+    top: 45px;
+    padding: 13px;
+    box-sizing: border-box;
+}
+.yandex-map__btns {
+    max-height: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10000;
+    top: 50%;
+    transform: translateY(-100%);
+    right: 40px;
+    .yandex-map__btn-plus {
+        height: 42px;
+        background-color: #FFFFFF;
+        width: 42px;
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+        border-radius: 5px 5px 0px 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .yandex-map__btn-minus {
+        width: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        cursor: pointer;
+        height: 42px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+.yandex-map__btn-icon {
+    margin: auto;
+}
